@@ -1,0 +1,61 @@
+
+body {
+	font-size: 18px;
+	color: #003767;
+	background-color: #f0f8ff;
+	font-family: 'Open Sans';
+}
+
+
+h1 {
+	color: #058aff;
+	font-size: 25px;
+	font-family: 'Open Sans';
+}
+
+
+#blur {
+	height: 25%;
+	width: 25%;
+}
+
+
+
+.lightbulb.onKitchen {
+	background: url(http://cf2.foodista.com/sites/default/files/styles/featured/public/field/image/cooking-mama-world-kitchen-20081104033930525_640w.jpg);
+	height: 450px;
+	width: 600px;
+}
+
+
+.lightbulb.onBed {
+	background: url(https://secure.static.tumblr.com/144dd939b4712e2900da02c171b59812/hyxow7c/qZtnoq6pa/tumblr_static_tumblr_static_7bjbz178y7sw0g4kcogkk48wg_640.jpg);
+	height: 370px;
+	width: 550px;
+}
+
+
+.lightbulb.off {
+	background: url(https://www.colourbox.com/preview/11137851-halloween-ghosts-seamless-pattern-background.jpg);
+	width: 500px;
+	height: 400px;
+}
+
+.switch {
+	background: url(http://www.abeka.com/BookImages/ClipArt/217301/150x150y160fx160fh-w/217301-Light-Switch-color-png.png);
+	height: 160px;
+	width: 160px;
+}
+
+
+.clapper {
+	background: url(http://www.sherv.net/cm/emoticons/hand-gestures/clapping-smiley-emoticon.gif);
+	height: 33px;
+	width: 50px;
+}
+
+#master_switch {
+	background: url(http://www.mobilebeat.com/wp-content/uploads/2012/12/usb_panic_1.png);
+	width: 330px;
+	height: 400px;
+}

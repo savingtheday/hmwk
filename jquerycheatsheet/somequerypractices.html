@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>jQuery</title>
+		<link href="stylesheet.css" rel="stylesheet" type="text/css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="practicejs.js" type="text/javascript"></script>
+	</head>
+
+<body>
+	<div id="contaner">
+		<center><img src="aliens.jpg"></center>
+
+		<h1>Examples:</h1>
+
+		<div id="slideUpDemo">
+			Click me and I'll slide up and disappear, but then I'll come back because there's a secondary function attached to my id. It's like I'm dating two people at once.
+		</div>
+
+		<br>
+			<img id="blur" src="https://www.petfinder.com/wp-content/uploads/2012/11/140272627-grooming-needs-senior-cat-632x475.jpg">
+		<br>
+			Click the kitty to make him disappear. Goodbye cat, you were too precious for this world.
+
+		<br>
+			<img id="mouseleave" src="http://exmoorpet.com/wp-content/uploads/2012/08/cat.png">
+		<br>
+			Move your mouse over this kitty, and he'll run away to chase it. Good boy!
+			<br>
+			<span id="clickme">I'M MELLLTINGGGGGG (click me)</span>
+
+			<img id="wicked" src="https://media.giphy.com/media/AVYgfmc0UiP9m/giphy.gif">
+
+
+	<h1>The actual code:</h1>
+
+		<pre>$(document).ready(
+	function(){
+		$("#slideUpDemo").click(
+			function() {
+				$("#slideUpDemo").slideUp();
+			}
+		);
+
+		$("#slideUpDemo").click(
+			function() {
+				$("#slideUpDemo").slideDown();
+			}
+		);
+
+		$("#blur").click(
+			function() {
+				$("#blur").fadeOut(7000); //and hey look I changed the timing of the fade
+			}
+		);
+
+
+				$("#mouseleave").mouseleave(
+			function() {
+				$("#mouseleave").fadeOut(500); //and hey look there's a mouse event that isn't clicking
+			}
+		);
+	}
+)
+
+		</pre>
+
+
+	....okay, great, what the heck does that mean?
+		<br>
+
+		<img src="example1.png">
+		<br>
+			So here's the code in Sublime Text 3, which is sublime because it color codes certain pieces of the code for you to recognize.
+				<ul>
+					<li>Pink just shows the cute dollar signs, the name of the main funtion in jQuery.</li>
+					<li>Yellow is showing us strings.</li>
+					<li>Purple is showing us number-literals and can be decimal, binary, octal, and hexadecimal.</li>
+					<li>Blue is showing reserved words and cannot be used as variables or function names.</li>
+				</ul>
+	</div>
+
+
+
+
+
+	<div class="room" id="kitchen">
+
+				<br>
+    	<div class="lightbulb onKitchen"></div>
+    	<div class="switch"></div>
+    	<div class="clapper"></div>
+	</div>
+	<div class="room" id="bedroom">
+    	<div class="lightbulb onBed"></div>
+    	<div class="switch"></div>
+    	<div class="clapper"></div>
+	</div>
+	<div id="master_switch"></div>
+
+
+
+
+	</body>
+
+
+
+
+</html>
