@@ -5,27 +5,30 @@ $(document).ready(function(){
 
   // $('#hours').css('color', selectBG)
 
-  function colorHours(){
-    var date = new Date;
-    var hours = date.getHours();
-    $('#hours').text(hours);
+  var currentHour = 0;
 
-    randoHours(hours);
-  }
+  // function colorHours(){
+  //   var date = new Date;
+  //   var hours = date.getHours();
+  //   $('#hours').text(hours);
+
+  //   randoHours(hours);
+  // }
 
   function displayTime(){
     var date = new Date;
-    // var hours = date.getHours();
+    var hours = date.getHours();
     var minutes = date.getMinutes();
     var seconds = date.getSeconds();
     var milliseconds = date.getMilliseconds();
 
-    // $('#hours').text(hours);
+    $('#hours').text(hours);
     $('#minutes').text(format(minutes));
     $('#seconds').text(format(seconds));
     $('#milliseconds').text(milliseconds);
 
     ifMinOdd(minutes);
+    randoHours(hours);
   }
 
   function format(value){
@@ -56,14 +59,15 @@ $(document).ready(function(){
   function randoHours(hrs){
     var ColorArray = ['blue','pink','yellow', 'red', 'orange'],
       select = ColorArray[Math.floor(Math.random() * ColorArray.length)];
-      if (hrs < 30) {
+      if (hrs !== currentHour) {
       $('#hours').css('color', select);
+      currentHour = hrs;
       }
       else{
       }
   }
 
-window.setInterval(colorHours, 1000)
+//window.setInterval(colorHours, 1);
 
 window.setInterval(displayTime, 1);
 });
