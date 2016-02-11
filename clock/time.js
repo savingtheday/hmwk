@@ -1,7 +1,7 @@
 $(document).ready(
 
 	function(){
-		window.setInterval(tictoc, 1000);
+		window.setInterval(tictoc, 1000); //runs function over and over
 	}
 );
 
@@ -19,7 +19,7 @@ $(document).ready(
 				innerHTML = + "0";
 			}
 			minutes = ( minutes < 10 ? "0" : "" ) + minutes;
-			if (minutes % 2 == 0){
+			if (minutes % 5 == 0){
 				$("body").removeClass("blueBox");
 				$("body").addClass("purpleBox");
 			}
@@ -29,10 +29,15 @@ $(document).ready(
 			}
 		var seconds = deathClok.getSeconds();
 			seconds = ( seconds < 10 ? "0" : "" ) + seconds;
+
+
 		var timeOfDay = ( hours > 11 ) ? "AM" : "PM";
+
 		document.getElementById("hours").innerHTML = hours.toString() + ":";
 		document.getElementById("minutes").innerHTML = minutes.toString() + ":";
 		document.getElementById("seconds").innerHTML = seconds.toString();
 		document.getElementById("morningNight").innerHTML = timeOfDay.toString();
 	}
+
+
 

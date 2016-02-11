@@ -1,0 +1,480 @@
+/*desktop*/
+
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media (min-width: 480px){
+
+
+	* {
+	  -webkit-box-sizing: border-box;
+	     -moz-box-sizing: border-box;
+	          box-sizing: border-box;
+	}
+
+
+	body{
+		font-family: 'Georgia', serif;
+		padding: 0;
+		margin: 0;
+	 }
+
+.light{
+	width: 60%;
+}
+
+	.lightbox-outer{
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  background-color: rgba(0,0,0,0.5);
+	  height: 200%;
+	  width: 100%;
+	  display: none;
+	}
+
+	.lightbox-inner{
+	  text-align: center;
+	}
+
+	.gal {
+    	margin: 10px;
+    	border: 0;
+    	float: left;
+    	height: 25%;
+    	width: 25%;
+    }
+
+	#container{
+		max-width: 1500px;
+		margin: 0 auto;
+	}
+
+	#mk {
+	    filter: url("mk.png");
+	   -webkit-filter: grayscale(100%);
+	   -moz-filter: grayscale(100%);
+	   -ms-filter: grayscale(100%);
+	   filter: grayscale(100%);
+	   margin-top: 20px;
+	}
+
+	#mk:hover {
+	   -webkit-filter: none;
+	   -moz-filter: none;
+	   -ms-filter: none;
+	   filter: none;
+
+	}
+
+
+	#menu{
+		background-color: #f5f5dc;
+		color: black;
+		text-align: center;
+		margin-left: 30px;
+		position: fixed;
+		height: 100%;
+		width: 200px;
+		font-size: 30px;
+		padding: 15px 7px;
+		font-family: 'Satisfy', serif;
+	}
+
+
+	#bigText {
+		font-family: 'Rozha One', serif;
+		font-size: 120px;
+		color: #f5f5dc;
+		position: relative;
+		left: 217px;
+		top: 150px;
+		padding: 0;
+	}
+
+	#content{
+		background:rgba(255,255,255,0.7);
+		position: relative;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 17px;
+		left: 230px;
+		top: 99px;
+		padding: 20px;
+		max-width: 900px;
+		font-weight: bold;
+	}
+
+
+	#galcontent{
+		background:rgba(255,255,255,0.7);
+		position: relative;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 17px;
+		left: 230px;
+		top: 99px;
+		padding: 20px;
+		font-weight: bold;
+		height: 800px;
+	}
+
+
+	.eat a:link{
+		color: #942a2a;
+		font-size: 20px;
+		text-decoration: none;
+	}
+
+	#col1 {
+		display: inline-block;
+	  	vertical-align: top;
+	  	width: 30%;
+	   	margin: 4px;
+	}
+
+	#col2 {
+		display: inline-block;
+	  	vertical-align: top;
+	  	width: 30%;
+	  	margin: 4px;
+	}
+
+	#col3 {
+		display: inline-block;
+	  	vertical-align: top;
+	  	width: 30%;
+	  	margin: 4px;
+	}
+
+	nav{
+		list-style-type: none;
+		margin-top: 20%;
+	}
+
+	nav a:link{
+		color: black;
+		text-decoration: none;
+	}
+
+	nav a:visited{
+		color: black;
+	}
+
+	nav a:hover{
+		text-decoration: underline;
+	}
+
+	.menuLink {
+		text-align: center;
+		padding: 4px;
+		display: block;
+	}
+
+
+
+
+
+
+	img.oldLanc {
+	    margin: 1em;
+	    float: left;
+	}
+}
+
+
+/*tablet*/
+
+@media (min-width: 480px) and (max-width: 1025px){
+
+
+	* {
+	  -webkit-box-sizing: border-box;
+	     -moz-box-sizing: border-box;
+	          box-sizing: border-box;
+	}
+
+
+	body{
+		font-family: 'Georgia', serif;
+		padding: 0;
+		margin: 0;
+	 }
+
+
+	.gal {
+    	margin: 10px;
+    	border: 0;
+    	float: left;
+    	height: 25%;
+    	width: 25%;
+    }
+
+
+	#container{
+		max-width: 1500px;
+		margin: 0 auto;
+	}
+
+	#mk {
+	   margin-top: 20px;
+	}
+
+
+
+
+	#menu{
+		background-color: #f5f5dc;
+		color: black;
+		text-align: center;
+		margin-left: 30px;
+		position: fixed;
+		height: 100%;
+		width: 200px;
+		font-size: 30px;
+		padding: 15px 7px;
+		font-family: 'Satisfy', serif;
+	}
+
+
+	#bigText {
+		font-family: 'Rozha One', serif;
+		font-size: 120px;
+		color: #f5f5dc;
+		position: relative;
+		left: 217px;
+		top: 300px;
+		padding: 0;
+	}
+
+	#content{
+		background:rgba(255,255,255,0.7);
+		position: relative;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 17px;
+		left: 230px;
+		top: 249px;
+		/*padding: 20px;*/
+		padding-right: 50px;
+		font-weight: bold;
+		width: 80%;
+	}
+
+	#galcontent{
+		background:rgba(255,255,255,0.7);
+		position: relative;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 17px;
+		left: 230px;
+		top: 249px;
+		/*padding: 20px;*/
+		padding-right: 50px;
+		font-weight: bold;
+		width: 80%;
+	}
+
+
+	.eat a:link{
+		color: #942a2a;
+		font-size: 20px;
+		text-decoration: none;
+	}
+
+	#col1 {
+		display: inline-block;
+	  	vertical-align: top;
+	  	width: 40%;
+	   	margin: 4px;
+	}
+
+	#col2 {
+		display: inline-block;
+	  	vertical-align: top;
+	  	width: 40%;
+	  	margin: 4px;
+	}
+
+	#col3 {
+		display: inline-block;
+	  	vertical-align: top;
+	  	width: 90%;
+	  	margin: 4px;
+	}
+
+	nav{
+		list-style-type: none;
+		margin-top: 20%;
+	}
+
+	nav a:link{
+		color: black;
+		text-decoration: none;
+	}
+
+	nav a:visited{
+		color: black;
+	}
+
+	nav a:hover{
+		text-decoration: underline;
+	}
+
+	.menuLink {
+		text-align: center;
+		padding: 4px;
+		display: block;
+	}
+
+
+
+
+
+
+	img.oldLanc {
+	    margin: 1em;
+	    float: left;
+	}
+}
+
+
+
+/*mobile*/
+
+
+
+@media (max-width: 480px){
+
+
+	* {
+	  -webkit-box-sizing: border-box;
+	     -moz-box-sizing: border-box;
+	          box-sizing: border-box;
+	}
+
+
+	body{
+		font-family: 'Georgia', serif;
+		padding: 0;
+		margin: 0;
+	 }
+
+	 	.gal {
+    	margin-left: 20%;
+    	margin-bottom: 10%;
+    	border: 0;
+    	display: block;
+    	height: 50%;
+    	width: 50%;
+    }
+
+	#mk {
+		   margin-top: 20px;
+	}
+
+	#container{
+		max-width: 1500px;
+		margin: 0 auto;
+	}
+
+
+
+	#menu{
+		background-color: #f5f5dc;
+		color: black;
+		text-align: center;
+		margin-left: 15%;
+		/*position: fixed;*/
+		height: 650px;
+		width: 70%;
+		font-size: 35px;
+		padding: 10px 2px;
+		font-family: 'Satisfy', serif;
+	}
+
+
+	#bigText {
+		font-family: 'Rozha One', serif;
+		font-size: 50px;
+		text-align: center;
+		color: #f5f5dc;
+		/*position: relative;*/
+		/*left: 217px;*/
+		/*top: 300px;*/
+		padding: 0;
+		margin: 0;
+	}
+
+	#content{
+		background:rgba(255,255,255,0.7);
+		/*position: relative;*/
+		font-family: 'Open Sans', sans-serif;
+		font-size: 17px;
+		/*left: 230px;*/
+		/*top: 249px;*/
+		padding: 10px;
+		font-weight: bold;
+	}
+
+
+	.eat a:link{
+		color: #942a2a;
+		font-size: 20px;
+		text-decoration: none;
+	}
+
+	#col1 {
+		display: block;
+	  	vertical-align: top;
+	  	width: 90%;
+	   	margin: 4px;
+	}
+
+	#col2 {
+		display: block;
+	  	vertical-align: top;
+	  	width: 90%;
+	  	margin: 4px;
+	}
+
+	#col3 {
+		display: block;
+	  	vertical-align: top;
+	  	width: 90%;
+	  	margin: 4px;
+	}
+
+	nav{
+		list-style-type: none;
+		margin-top: 20%;
+	}
+
+	nav a:link{
+		color: black;
+		text-decoration: none;
+	}
+
+	nav a:visited{
+		color: black;
+	}
+
+	nav a:hover{
+		text-decoration: underline;
+	}
+
+	.menuLink {
+		text-align: center;
+		padding: 4px;
+		display: block;
+	}
+
+
+
+
+
+
+	img.oldLanc {
+	    margin: 3em;
+	    /*float: left;*/
+	}
+}

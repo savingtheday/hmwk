@@ -1,0 +1,36 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>HIP CLOK</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href="newtime.css" rel="stylesheet" type="text/css">
+
+  </head>
+  <body>
+
+<div id="container">
+  <div id="time">
+      <span id="hours" class="timeText">
+
+      </span>
+
+      <span id="minutes" class="timeText">
+
+      </span>
+
+      <span id="seconds" class="timeText">
+
+      </span>
+
+      <span id="morningNight" class="timeText">
+      </span>
+
+
+
+  </div>
+</div>
+
+    <script src="time.js"></script>
+  </body>
+  </html>
