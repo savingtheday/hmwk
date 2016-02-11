@@ -16,6 +16,19 @@ finalAnswer();
 
 
 
+var newArray = [];
+
+function answer(){
+  for (i = 0; i < cities.length; i++){
+    if (cities[i].length < 7){
+      newArray.push(cities[i]);
+    }
+  };
+  return small;
+};
+console.log(answer());
+
+
 
 
 // var alpha = cities [0].length;

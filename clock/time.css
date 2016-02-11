@@ -1,0 +1,38 @@
+body {
+	background-color: black;
+	color: rgba(255,255,255,0.6);
+	font-family: 'Lobster';
+	font-size: 100px;
+	padding: 10px;
+
+}
+
+#container {
+	text-align: center;
+	padding-top: 25%
+}
+
+#time {
+	margin: 10px;
+	display: inline;
+}
+
+.blueBox{
+	background: url('1.jpg');
+}
+
+.purpleBox{
+	background: url('2.jpg');
+}
+
+h1{
+	font-size: 30px
+}
+
+h2{
+	font-size: 27px
+}
+
+h3{
+	font-size: 25px
+}
