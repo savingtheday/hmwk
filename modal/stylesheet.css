@@ -1,0 +1,56 @@
+/*desktop*/
+
+
+
+.light{
+	width: 60%;
+}
+
+	.lightbox-outer{
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  background-color: rgba(0,0,0,0.5);
+	  height: 200%;
+	  width: 100%;
+	  display: none;
+	}
+
+	.lightbox-inner{
+	  text-align: center;
+	}
+
+h1{
+	font-family: 'Satisfy',
+	color: white;
+	font-size: 40px;
+}
+
+a:link{
+	color: white;
+	text-decoration: none;
+}
+
+a:visited{
+	text-decoration: none;
+	color: white;
+}
+
+#galcontent{
+	text-align: center;
+	width: 100%;
+	padding-top: 30px;
+}
+
+.caption{
+	color: red;
+}
+
+#modal{
+	height: 400px;
+	width: 400px;
+	background-color: white;
+	position: absolute;
+	margin-top: 10%;
+	margin-left: 35%;
+}
