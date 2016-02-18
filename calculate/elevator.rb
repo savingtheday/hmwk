@@ -1,14 +1,10 @@
-class Val1
-  attr_accessor :ourValue
-
-  def initialize(ourValue)
-    @ourValue = ourValue
-  end
-end
 
 
 class Elevator
-
+  attr_accessor :ourFloor
+  def initialize(ourFloor)
+    @ourFloor = ourFloor
+  end
 
   def start
     puts "What floor would you like to go to? Please choose a number between 1 and 2"
@@ -58,7 +54,7 @@ end
 
 
 
-class Greeting
+class Greet
   attr_accessor :cheery
 
   def initialize(cheery)
@@ -68,5 +64,5 @@ end
 
 
 
-game = Elevator.new
+game = Elevator.new(2)
 game.start
