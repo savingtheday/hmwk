@@ -1,10 +1,7 @@
 
 
 class TV
-  attr_accessor :myTV
-  def initialize(myTV)
-    @myTV = myTV
-  end
+
 
   def start
     puts "On or off?"
