@@ -1,0 +1,197 @@
+body{
+  background-color: #a6bc8f;
+}
+
+.content{
+  width: 100%;
+  height: 750px;
+}
+
+.paralax{
+  text-align: center;
+  padding: 50px 0;
+  font-family: 'Josefin Slab', serif;
+  background-image: url(images/pics/1.jpg);
+  background-size: fill;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+}
+
+.content h1{
+  font-size: 12em;
+  color: white;
+}
+
+.row{
+  width: 100%;
+  text-align: center;
+  height: 1024px;
+  background-color: #CFF09E;
+}
+
+
+.box{
+  width: 10em;
+  display: inline-block;
+  margin: 1em;
+}
+
+.birdName{
+  text-align: center;
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.5em;
+  height: 2em;
+  padding: .5em;
+}
+
+.maori{
+  font-family: 'Bad Script', cursive;
+  font-size: 25px;
+}
+
+.iconContaner{
+}
+
+.icon{
+  margin: .2em;
+  cursor: pointer;
+  color: #0B486B;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    color: white;
+    background-color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  color: #3B8686;
+}
+
+
+
+
+
+
+
+
+
+header{
+  text-align: center;
+  font-family: 'Josefin Slab', serif;
+  width: 100%;
+  padding: 10px;
+}
+
+.row{
+  width: 100%;
+  text-align: center;
+}
+
+
+.box{
+  width: 10em;
+  display: inline-block;
+  margin: 1em;
+}
+
+.birdName{
+  text-align: center;
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.5em;
+  height: 2em;
+  padding: .5em;
+}
+
+
+
+.iconContaner{
+}
+
+.icon{
+  margin: .2em;
+}
+
+.circle{
+  width:150px;
+  height:150px;
+  border-radius:100px;
+  font-size:20px;
+  color:#fff;
+  line-height:100px;
+  text-align:center;
+  display: inline-block;
+  box-shadow: 7px 7px #79BD9A;
+}
+
+.bAusBittern{
+  background-image: url('images/birds/bittern.png');
+  background-position: center;
+}
+
+.bBellbird{
+  background-image: url('images/birds/bellbird.jpg');
+}
+
+.bCrestedGrebe{
+  background-image: url('images/birds/australasian-bittern.jpg');
+}
+
+.bStilt{
+  background-image: url('images/birds/black-stilt.jpg');
+  background-position: center;
+}
+
+.bBlueDuck{
+  background-image: url('images/birds/blue-duck.jpg');
+  /*background-position: center;*/
+}
+
+.bWarbler{
+  background-image: url('images/birds/grey-warbler.jpg');
+  /*background-position: center;*/
+}
+
+.bKaka{
+  background-image: url('images/birds/kaka.jpg');
+  background-position: center;
+}
+
+.bFantail{
+  background-image: url('images/birds/fantail.jpg');
+  background-position: center;
+}
