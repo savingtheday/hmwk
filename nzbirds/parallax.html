@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <style type="text/css">
 
             * {
@@ -9,27 +9,22 @@
                 padding: 0;
             }
 
-            .content {
+            .container {
                 height: 1500px;
-                background-color: #333;
+                background-color: black;
             }
 
-            .parallax-bg {
+            .myParallax {
                 padding: 300px 0;
                 background-image: url(images/pics/1.jpg);
                 background-size: cover;
                 background-attachment: fixed;
-                -webkit-transition: all 0.2s ease;
-                -moz-transition: all 0.2s ease;
-                transition: all 0.2s ease;
             }
 
-            .parallax-bg h1 {
+            .myParallax h1 {
                 text-align: center;
-                text-transform: uppercase;
                 color: #fff;
                 font-size: 70px;
-                font-family: Arial;
             }
 
 
@@ -40,8 +35,8 @@
     <body>
 
 
-        <div class="content">
-            <div class="parallax-bg">
+        <div class="container">
+            <div class="myParallax">
                 <h1>Some NZ birbs</h1>
             </div>
         </div>
@@ -50,13 +45,12 @@
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript">
 
         (function() {
 
             var documentEl = $(document),
-                parallaxBg = $('div.parallax-bg');
+                parallaxBg = $('div.myParallax');
 
             documentEl.on('scroll', function() {
                 var currScrollPos = documentEl.scrollTop();
