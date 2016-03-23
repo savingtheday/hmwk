@@ -1,0 +1,58 @@
+<h1>Standard simple form</h1>
+<p>
+<%= simple_form_for(@user) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :username %>
+    <%= f.input :password %>
+    <%= f.input :date_of_birth %>
+    <%= f.input :description %>
+    <%= f.input :remember_me %>
+    <%= f.input :age %>
+    <%= f.input :email %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
+<p>
+
+<h1>Validations directly into form code</h1>
+<%= simple_form_for @user do |f| %>
+  <%= f.input :username, input_html: { class: 'special' } %>
+  <%= f.input :password, input_html: { maxlength: 7 } %>
+  <%= f.input :remember_me, input_html: { value: '1' } %>
+  <%= f.button :submit %>
+<% end %>
+
+<p>
+<h1>With hints and better labels</h1>
+<%= simple_form_for @user do |f| %>
+  <%= f.input :username, label: 'Your username please' %>
+  <%= f.input :password, hint: 'No special characters.' %>
+  <%= f.input :email, placeholder: 'user@domain.com' %>
+  <%= f.input :remember_me, inline_label: 'Yes, remember me' %>
+  <%= f.button :submit %>
+<% end %>
+<p>
+<h1>Change defalts</h1>
+<%= simple_form_for @user do |f| %>
+  <%= f.input :username %>
+  <%= f.input :password %>
+  <%= f.input :remember_me,     as: :radio_buttons %>
+  <%= f.button :submit %>
+<% end %>
+<p>
+<h1>Dropdowns with ranges</h1>
+<p>
+
+<%= simple_form_for @user do |f| %>
+  <%= f.input :username %>
+  <%= f.input :age, collection: 18..60 %>
+<%= f.input :country_id, collection: @continents, as: :grouped_select, group_method: :countries, priority: [ "Brazil" ] %>
+
+
+  <%= f.button :submit %>
+<% end %>
